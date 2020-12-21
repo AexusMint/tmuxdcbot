@@ -798,7 +798,7 @@ bot.on('message', message => {
   	}
 
   	if(isCommand(message.content, 'join')){
-  		var userVoiceChannel = message.member.voiceChannel;
+  		var userVoiceChannel = message.member.voice.channel;
   		if(userVoiceChannel){
   			if(!playing){
   				if(currentVoiceChannel){
